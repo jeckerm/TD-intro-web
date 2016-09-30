@@ -31,3 +31,12 @@ Update | PUT | */author/id/article/aid/picture/pid* | Update the picture whose i
 Destroy | DELETE | */author/id/article/aid/picture/pid* | Delete the picture whose id is "pid" and from the article whose it is "aid, from the author whose id is "id"
 
 ##Comment
+
+**Operation** | **Verb** | **URI** | **Description**
+------------- | -------- | ------- | ---------------
+Read (all) | GET | */author/id/article/aid/picture/pid/comment* **OR** */author/id/article/aid/comment* | Return the list of comments of the picture whose id is "pid" from the article whose id is "aid" from the author whose id is "id **OR** the list of comments of the article whose id is "aid" from the author whose id is "id"
+Create | POST | */author/id/article/aid/picture/pid/comment*  **OR** */author/id/article/aid/comment* | Create the list of comments of the picture whose id is "pid" from the article whose id is "aid" from the author whose id is "id **OR** the list of comments of the article whose id is "aid" from the author whose id is "id"
+Read | GET | */author/id/article/aid/picture/pid/comment/cid* **OR** */author/id/article/aid/comment/cid* | Return the comment whose id is "cid" from the picture whose id is "pid" from the article whose id is "aid" from the author whose id is "id **OR** the comment whose id is "cid" from the article whose id is "aid" from the author whose id is "id"
+Update | PUT | */author/id/article/aid/picture/pid/comment/cid* **OR** */author/id/article/aid/comment/cid* | Update the comment whose id is "cid" from the picture whose id is "pid" from the article whose id is "aid" from the author whose id is "id **OR** the comment whose id is "cid" from the article whose id is "aid" from the author whose id is "id"
+Destroy | DELETE | */author/id/article/aid/picture/pid/comment/cid* **OR** */author/id/article/aid/comment/cid* | Delete the comment whose id is "cid" from the picture whose id is "pid" from the article whose id is "aid" from the author whose id is "id **OR** the comment whose id is "cid" from the article whose id is "aid" from the author whose id is "id"
+
